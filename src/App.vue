@@ -1,19 +1,20 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div id="App">
+  <ciccio />
+  <gen />
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ciccio from './components/ciccio.vue';
+import gen from './components/gen.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    gen,
+    ciccio
+  },
+};
 </script>
 
 <style lang="scss">
@@ -26,3 +27,5 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+
